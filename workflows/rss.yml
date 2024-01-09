@@ -8,7 +8,7 @@ jobs:
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         with:
-          url: https://api.netlify.com/build_hooks/${{ secrets.netlifykey }}?trigger_branch=main&trigger_title=gaction
+          url: https://api.netlify.com/build_hooks/${{ secrets.NETLIFYKEY }}?trigger_branch=main&trigger_title=gaction
           method: POST
           body: |
             {
