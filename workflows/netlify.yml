@@ -14,7 +14,6 @@ jobs:
           echo method: $method
           echo headers $headers
           echo body: $body
-    steps:
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         id: info
