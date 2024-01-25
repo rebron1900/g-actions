@@ -11,6 +11,6 @@ jobs:
         with:
           url: https://api.github.com/repos/rebron1900/11ty-theme-notability/dispatches
           method: POST
-          headers: '{"Accept":"application/vnd.github.everest-preview+json", "Authorization":"Bearer {{secrets.GITHUB_TOKEN}}"}',
+          headers: '{"Accept":"application/vnd.github.everest-preview+json", "Authorization":"Bearer ${{secrets.GITHUB_TOKEN}}"}',
           data: '{"event_type": "update"}'
 
