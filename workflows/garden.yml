@@ -9,7 +9,7 @@ jobs:
         uses: actionsflow/axios@v1
         id: info
         with:
-          url: https://api.github.com/repos/rebron1900/quarte-garden/dispatches
+          url: https://api.github.com/repos/rebron1900/quartz-garden/dispatches
           method: POST
           headers: '{"Accept":"application/vnd.github.everest-preview+json", "Authorization":"Bearer ${{secrets.ACTION_TOKEN}}"}'
           data: '{"event_type": "update"}'
