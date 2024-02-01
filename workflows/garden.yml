@@ -1,0 +1,15 @@
+on:
+  webhook:
+jobs:
+  request:
+    name: Make a HTTP Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
+        id: info
+        with:
+          url: https://api.github.com/repos/rebron1900/quarte-garden/dispatches
+          method: POST
+          headers: '{"Accept":"application/vnd.github.everest-preview+json", "Authorization":"Bearer ${{secrets.ACTION_TOKEN}}"}'
+          data: '{"event_type": "update"}'
